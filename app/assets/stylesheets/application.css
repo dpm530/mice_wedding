@@ -3,17 +3,27 @@ body {
 }
 #home {
    padding-top:50px;
+   padding-bottom: 50px;
+   /* height:500px; */
+   color: black;
+   background-color: #FFFFFF;
+}
+   div.jumbotron{
+      background-image: url("/assets/1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 500px;
+   }
+
+#gifts {
+   padding-top:50px;
    height:500px;
    color: black;
    background-color: #FFFFFF;
 }
-#aboutus {
-   padding-top:50px;
-   height:500px;
-   color: black;
-   background-color: #EEEEEE;
-}
-#photos {
+#gallery {
    /* padding-top:50px; */
    /* height:500px; */
    color: black;
@@ -29,13 +39,13 @@ body {
       width: 100%;
       margin: auto;
    }
-#schedule {
+#wedding {
    padding-top:50px;
    height:500px;
    color: black;
    background-color: #EEEEEE;
 }
-#information {
+#travel {
    padding-top:50px;
    height:500px;
    color: black;
@@ -45,11 +55,23 @@ body {
    padding-top:50px;
    height:500px;
    color: black;
-   background-color: #EEEEEE;
+   background-color: #FFFFFF;
 }
 #guestbook {
    padding-top:50px;
    height:500px;
+   color: black;
+   background-color: #EEEEEE;
+}
+#contact {
+   padding-top:50px;
+   height:500px;
+   color: black;
+   background-color: #EEEEEE;
+}
+#countdown {
+   padding-top:50px;
+   height:200px;
    color: black;
    background-color: #FFFFFF;
 }
