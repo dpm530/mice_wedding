@@ -53,15 +53,20 @@ body {
 }
 #rsvp {
    padding-top:50px;
-   height:500px;
+   /* height:500px; */
    color: black;
    background-color: #FFFFFF;
 }
 #guestbook {
    padding-top:50px;
-   height:500px;
+   /* height:500px; */
    color: black;
    background-color: #EEEEEE;
+}
+#guestbookMessages{
+   min-height: 254px;
+   border: 1px solid black;
+   background-color: white;
 }
 #contact {
    padding-top:50px;
