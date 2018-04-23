@@ -51,6 +51,11 @@ body {
    color: black;
    background-color: #FFFFFF;
 }
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
 #rsvp {
    padding-top:50px;
    /* height:500px; */
