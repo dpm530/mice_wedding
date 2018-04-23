@@ -47,7 +47,7 @@ body {
 }
 #travel {
    padding-top:50px;
-   height:500px;
+   /* height:500px; */
    color: black;
    background-color: #FFFFFF;
 }
