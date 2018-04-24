@@ -16,35 +16,31 @@ body {
       width: 100%;
       height: 500px;
    }
+   #home h3{
+      font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+      font-style: italic;
+      color: #414141;
+   }
+   #home p{
+      font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+      color: #414141;
+   }
 
-#gifts {
-   padding-top:50px;
-   height:500px;
-   color: black;
-   background-color: #FFFFFF;
-}
-#gallery {
-   /* padding-top:50px; */
-   /* height:500px; */
-   color: black;
-   background-color: #FFFFFF;
-   padding-left: 0px;
-   padding-right: 0px;
-}
-   div.carousel-inner{
-      /* height: 500px; */
-      width: 100%;
-   }
-   .carousel-inner img{
-      width: 100%;
-      margin: auto;
-   }
 #wedding {
    padding-top:50px;
    /* height:500px; */
    color: black;
    background-color: #EEEEEE;
 }
+   #wedding h3{
+      font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+      font-style: italic;
+      color: #414141;
+   }
+   #wedding p{
+      font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+      color: #414141;
+   }
 #travel {
    padding-top:50px;
    /* height:500px; */
@@ -62,11 +58,33 @@ body {
    color: black;
    background-color: #FFFFFF;
 }
+#gallery {
+   /* padding-top:50px; */
+   /* height:500px; */
+   color: black;
+   background-color: #FFFFFF;
+   padding-left: 0px;
+   padding-right: 0px;
+}
+div.carousel-inner{
+   /* height: 500px; */
+   width: 100%;
+}
+.carousel-inner img{
+   width: 100%;
+   margin: auto;
+}
 #guestbook {
    padding-top:50px;
    /* height:500px; */
    color: black;
    background-color: #EEEEEE;
+}
+#gifts {
+   padding-top:50px;
+   height:500px;
+   color: black;
+   background-color: #FFFFFF;
 }
 #guestbookMessages{
    min-height: 254px;
