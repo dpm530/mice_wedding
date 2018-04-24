@@ -1,6 +1,7 @@
 body {
    position: relative;
 }
+
 #home {
    padding-top:50px;
    padding-bottom: 50px;
@@ -8,23 +9,24 @@ body {
    color: black;
    background-color: #FFFFFF;
 }
-   div.jumbotron{
-      background-image: url("/assets/1.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 500px;
-   }
-   #home h3{
-      font: normal normal normal 90px/1.4em didot-w01-italic,serif;
-      font-style: italic;
-      color: #414141;
-   }
-   #home p{
-      font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
-      color: #414141;
-   }
+      div.jumbotron{
+         background-image: url("/assets/1.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         width: 100%;
+         height: 500px;
+      }
+      #home h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+      #home p{
+         font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+         color: #414141;
+      }
+
 
 #wedding {
    padding-top:50px;
@@ -32,32 +34,49 @@ body {
    color: black;
    background-color: #EEEEEE;
 }
-   #wedding h3{
-      font: normal normal normal 90px/1.4em didot-w01-italic,serif;
-      font-style: italic;
-      color: #414141;
-   }
-   #wedding p{
-      font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
-      color: #414141;
-   }
+      #wedding h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+      #wedding p{
+         font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+         color: #414141;
+      }
+
 #travel {
    padding-top:50px;
    /* height:500px; */
    color: black;
    background-color: #FFFFFF;
 }
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-#rsvp {
+      #travelHeader h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+      #travelHeader p{
+         font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+         color: #414141;
+      }
+      .bottom-left {
+         position: absolute;
+         bottom: 8px;
+         left: 16px;
+      }
+
+#rsvp{
    padding-top:50px;
    /* height:500px; */
    color: black;
    background-color: #FFFFFF;
 }
+   #rsvp h3{
+      font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+      font-style: italic;
+      color: #414141;
+   }
+
 #gallery {
    /* padding-top:50px; */
    /* height:500px; */
@@ -66,43 +85,68 @@ body {
    padding-left: 0px;
    padding-right: 0px;
 }
-div.carousel-inner{
-   /* height: 500px; */
-   width: 100%;
-}
-.carousel-inner img{
-   width: 100%;
-   margin: auto;
-}
+      div.carousel-inner{
+         /* height: 500px; */
+         width: 100%;
+      }
+      .carousel-inner img{
+         width: 100%;
+         margin: auto;
+      }
+
 #guestbook {
    padding-top:50px;
    /* height:500px; */
    color: black;
    background-color: #EEEEEE;
 }
-#gifts {
+      #guestbookMessages{
+         min-height: 254px;
+         border: 1px solid black;
+         background-color: white;
+      }
+      #guestbook h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+
+#gifts{
    padding-top:50px;
    height:500px;
    color: black;
    background-color: #FFFFFF;
 }
-#guestbookMessages{
-   min-height: 254px;
-   border: 1px solid black;
-   background-color: white;
-}
+      #gifts h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+
 #contact {
    padding-top:50px;
    /* height:500px; */
    color: black;
    background-color: #EEEEEE;
 }
+      #contact h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+
 #countdown {
    padding-top:50px;
-   height:200px;
+   /* height:200px; */
    color: black;
    background-color: #FFFFFF;
 }
+      #countdown h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+
 footer{
    background-color: #EEEEEE;
 }
