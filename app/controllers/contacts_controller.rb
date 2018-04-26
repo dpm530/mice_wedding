@@ -2,10 +2,18 @@ class ContactsController < ApplicationController
 
    def create
 
-      @contact=Contact.create(contact_params)
-      return redirect_to :back
+      @contact=Contact.new(contact_params)
 
-   end   
+      if @contact.save
+         flash[:notice]=["Message Sent"]
+         return redirect_to "/#contact"
+      end
+
+      flash[:errors]=@contact.errors.full_messages
+
+      return redirect_to "/#contact"
+
+   end
 
 
    private
