@@ -325,7 +325,9 @@
                   <h4>Mayra & Mario</h4>
                   <p><small>June 23,2018</small></p>
                   <p><small>You're invited to our wedding celebration! Please RSVP so we can acommodate you.</small></p>
-                  <form class="text-left">
+                  <form class="text-left" action="" method="">
+                     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+
                      <div class="form-group">
                         <label for="first_name">First Name:</label>
                         <input type="text" class="form-control" id="first_name">
@@ -397,7 +399,9 @@
             <div class="row">
                <div class="col-sm-6">
                   <div class="container-fluid text-left">
-                     <form>
+                     <form method="" action="">
+                        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+
                         <div class="form-group">
                            <label for="name">Name:</label>
                            <input type="text" class="form-control" id="name">
@@ -447,6 +451,8 @@
                <div class="col-sm-6">
                   <div class="container-fluid text-left">
                      <form action="" method="">
+                        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+
                         <div class="form-group">
                            <label for="name">Name:</label>
                            <input type="text" class="form-control" id="name">
