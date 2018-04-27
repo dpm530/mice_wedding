@@ -102,7 +102,7 @@
                <p>Address: An der Apostelkirche 1, 10783 Berlin</p>
             </div>
             <div class="col-sm-4">
-               <img src="https://placehold.it/150x80?text=IMAGE" alt="pic" style="width: 100%;">
+               <img src="/assets/wedding1.jpg" alt="pic">
             </div>
          </div><br>
       </div><br>
@@ -130,7 +130,7 @@
             </div>
             <div class="row">
                <div class="col-sm-4 col-sm-offset-2">
-                  <img src="https://placehold.it/150x80?text=IMAGE" alt="pic" style="width: 100%;">
+                  <img src="/assets/travel1.jpg" alt="pic" style="width: 100%;">
                </div>
                <div class="col-sm-4">
                   <h5>BBQ in the Park | Thursday, June 21, 2018</h5>
@@ -145,12 +145,12 @@
                   <h5>Details to follow</h5>
                </div>
                <div class="col-sm-4">
-                  <img src="https://placehold.it/150x80?text=IMAGE" alt="pic" style="width: 100%;">
+                  <img src="/assets/travel2.jpg" alt="pic" style="width: 100%;">
                </div>
             </div>
             <div class="row">
                <div class="col-sm-4 col-sm-offset-2">
-                  <img src="https://placehold.it/150x80?text=IMAGE" alt="pic" style="width: 100%;">
+                  <img src="/assets/wedding1.jpg" alt="pic">
                </div>
                <div class="col-sm-4">
                   <h5>Church Ceremony | Saturday, June 23, 2018</h5>
@@ -165,7 +165,7 @@
                   <h5>Ribbeckstraße 6/7 14469 Potsdam</h5>
                </div>
                <div class="col-sm-4">
-                  <img src="https://placehold.it/150x80?text=IMAGE" alt="pic" style="width: 100%;">
+                  <img src="/assets/travel4.jpg" alt="pic" style="width: 100%;">
                </div>
             </div><br>
          </div><br>
@@ -460,14 +460,13 @@
       <!-- End Gallery section -->
 
       <!-- Guestbook Section -->
-      <div class="container-fluid text-center" id="guestbook">
-         <div class="page-header">
+      <div class="container-fluid" id="guestbook">
+         <div class="page-header text-center">
             <h3>Guestbook</h3>
          </div>
          <div class="container">
             <div class="row">
-
-               <div id="guestbookPink" class="col-sm-6">
+               <div id="guestbookPink" class="col-sm-5 col-sm-offset-1">
 
                   <form method="post" action="/guestbooks">
                      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
@@ -484,9 +483,8 @@
                   </form>
 
                </div>
-
-               <div class="container">
-                  <div id="guestbookMessages" class="col-sm-6">
+               <div class="container-fluid">
+                  <div id="guestbookMessages" class="col-sm-5 col-sm-offset-1">
 
                   </div>
                </div>
@@ -508,10 +506,10 @@
       <div class="container-fluid text-center" id="contact">
          <div class="container">
             <div class="row">
-               <div id="contactPink" class="col-sm-6">
+               <div class="col-sm-6">
                   <h3>Contact Us</h3>
-                  <p><small>Tel: 123-456-7890</small></p>
-                  <p><small>Email: mmhochweber@gmail.com</small></p>
+                  <p>Telephone: 123-456-7890</p>
+                  <p>Email: mmhochweber@gmail.com</p>
                </div>
                <div class="col-sm-6">
                   <img src="https://placehold.it/150x80?text=IMAGE" alt="pic" style="width: 100%;">
@@ -520,7 +518,7 @@
          </div>
          <div class="container">
             <div class="row">
-               <div class="col-sm-6">
+               <div id="contactPink" class="col-sm-6">
                   <div class="container-fluid text-left">
 
                      <!-- Errors -->
@@ -572,9 +570,9 @@
                      </form>
                   </div>
                </div>
-               <div id="contactPink" class="col-sm-6">
+               <div class="col-sm-6">
                   <h3>Get in touch</h3>
-                  <p><small>Do you have questions?</small></p>
+                  <p>Do you have questions?</p>
                </div>
             </div>
          </div>

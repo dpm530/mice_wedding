@@ -188,6 +188,12 @@ body {
          font-style: italic;
          color: #414141;
       }
+      #gifts p{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 20px;
+         font-weight: normal;
+         color: #414141;
+      }
 
 #contact {
    padding-top:50px;
