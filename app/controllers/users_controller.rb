@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       end
 
       flash[:errors]=@user.errors.full_messages
-      
+
       return redirect_to "/#rsvp"
 
    end
@@ -21,7 +21,7 @@ class UsersController < ApplicationController
    private
 
       def user_params
-         params.require(:user).permit(:first_name,:last_name,:email,:attending,:comment)
+         params.require(:user).permit(:first_name,:last_name,:email,:mobile_number,:attending,:comment)
       end
 
 end

@@ -26,6 +26,9 @@ body {
          font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
          color: #414141;
       }
+      #home .container{
+         background-color: #f7efe9;
+      }
 
 
 #wedding {
@@ -44,11 +47,26 @@ body {
          color: #414141;
       }
 
+#countdown {
+   padding-top:50px;
+   /* height:200px; */
+   color: black;
+   background-color: #FFFFFF;
+}
+      #countdown h3{
+         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-style: italic;
+         color: #414141;
+      }
+      #countdown p{
+         color: #e2bea8;
+      }
+
 #travel {
    padding-top:50px;
    /* height:500px; */
    color: black;
-   background-color: #FFFFFF;
+   background-color: #EEEEEE;
 }
       #travelHeader h3{
          font: normal normal normal 90px/1.4em didot-w01-italic,serif;
@@ -76,12 +94,15 @@ body {
       font-style: italic;
       color: #414141;
    }
+   #rsvpForm{
+      background-color: #f7efe9;
+   }
 
 #gallery {
    /* padding-top:50px; */
    /* height:500px; */
    color: black;
-   background-color: #FFFFFF;
+   background-color: #EEEEEE;
    padding-left: 0px;
    padding-right: 0px;
 }
@@ -98,7 +119,7 @@ body {
    padding-top:50px;
    /* height:500px; */
    color: black;
-   background-color: #EEEEEE;
+   background-color: #FFFFFF;
 }
       #guestbookMessages{
          min-height: 254px;
@@ -110,12 +131,15 @@ body {
          font-style: italic;
          color: #414141;
       }
+      #guestbookPink{
+         background-color: #f7efe9;
+      }
 
 #gifts{
    padding-top:50px;
-   height:500px;
+   /* height:500px; */
    color: black;
-   background-color: #FFFFFF;
+   background-color: #EEEEEE;
 }
       #gifts h3{
          font: normal normal normal 90px/1.4em didot-w01-italic,serif;
@@ -127,24 +151,15 @@ body {
    padding-top:50px;
    /* height:500px; */
    color: black;
-   background-color: #EEEEEE;
+   background-color: #FFFFFF;
 }
       #contact h3{
          font: normal normal normal 90px/1.4em didot-w01-italic,serif;
          font-style: italic;
          color: #414141;
       }
-
-#countdown {
-   padding-top:50px;
-   /* height:200px; */
-   color: black;
-   background-color: #FFFFFF;
-}
-      #countdown h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
-         font-style: italic;
-         color: #414141;
+      #contactPink{
+         background-color: #f7efe9;
       }
 
 footer{
