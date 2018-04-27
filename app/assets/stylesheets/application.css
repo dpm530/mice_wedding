@@ -18,12 +18,18 @@ body {
          height: 500px;
       }
       #home h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         /* font: normal normal normal 90px/1.4em didot-w01-italic,serif; */
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
       #home p{
-         font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+         /* font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif; */
+         font-family: 'Open Sans', sans-serif;
+         font-size: 17px;
+         font-weight: normal;
          color: #414141;
       }
       #home .container{
@@ -38,23 +44,36 @@ body {
    background-color: #EEEEEE;
 }
       #wedding h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
       #wedding p{
-         font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+         font-family: 'Open Sans', sans-serif;
+         font-size: 17px;
+         font-weight: normal;
          color: #414141;
+      }
+      #wedding .row p{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 18px;
+         font-weight: normal;
+         /* color: #414141; */
+         color: black;
       }
 
 #countdown {
    padding-top:50px;
-   /* height:200px; */
+   height:500px;
    color: black;
    background-color: #FFFFFF;
 }
       #countdown h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
@@ -69,18 +88,35 @@ body {
    background-color: #EEEEEE;
 }
       #travelHeader h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
       #travelHeader p{
-         font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif;
+         font-family: 'Open Sans', sans-serif;
+         font-size: 17px;
+         font-weight: normal;
          color: #414141;
       }
       .bottom-left {
          position: absolute;
          bottom: 8px;
          left: 16px;
+      }
+      #travelGuideHeader h3{
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
+         font-style: italic;
+         color: #414141;
+      }
+      #travelGuideHeader p{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 17px;
+         font-weight: normal;
+         color: #414141;
       }
 
 #rsvp{
@@ -90,7 +126,9 @@ body {
    background-color: #FFFFFF;
 }
    #rsvp h3{
-      font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+      font-family: 'GFS Didot', serif;
+      font-size: 90px;
+      font-weight: normal;
       font-style: italic;
       color: #414141;
    }
@@ -127,7 +165,9 @@ body {
          background-color: white;
       }
       #guestbook h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
@@ -137,12 +177,14 @@ body {
 
 #gifts{
    padding-top:50px;
-   /* height:500px; */
+   height:500px;
    color: black;
    background-color: #EEEEEE;
 }
       #gifts h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
@@ -154,7 +196,9 @@ body {
    background-color: #FFFFFF;
 }
       #contact h3{
-         font: normal normal normal 90px/1.4em didot-w01-italic,serif;
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
          font-style: italic;
          color: #414141;
       }
