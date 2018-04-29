@@ -107,7 +107,7 @@ body {
       }
       #travelBody h4{
          font-family: 'Open Sans', sans-serif;
-         font-size: 30px;
+         font-size: 40px;
          font-weight: normal;
          color: #414141;
       }
@@ -137,13 +137,28 @@ body {
       }
       #travelGuideBody h4{
          font-family: 'Open Sans', sans-serif;
-         font-size: 30px;
+         font-size: 40px;
          font-weight: normal;
-         color: black;
+         color: #414141;
+      }
+      #travelGuideBody h5{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 25px;
+         font-weight: normal;
+         color: #414141;
       }
       #travelGuideBody p{
          font-family: 'Open Sans', sans-serif;
          font-size: 17px;
+         font-weight: normal;
+         color: #414141;
+      }
+      #travelGuideBody #whereToEat{
+         background-color: #FFFFFF;
+      }
+      #travelGuideBody #whereToEat p{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 22px;
          font-weight: normal;
          color: #414141;
       }
@@ -154,16 +169,29 @@ body {
    color: black;
    background-color: #FFFFFF;
 }
-   #rsvp h3{
-      font-family: 'GFS Didot', serif;
-      font-size: 90px;
-      font-weight: normal;
-      font-style: italic;
-      color: #414141;
-   }
-   #rsvpForm{
-      background-color: #f7efe9;
-   }
+      #rsvp h3{
+         font-family: 'GFS Didot', serif;
+         font-size: 90px;
+         font-weight: normal;
+         font-style: italic;
+         color: #414141;
+      }
+      #rsvp h4{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 25px;
+         font-weight: normal;
+         color: #414141;
+      }
+      #rsvp p{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 17px;
+         font-weight: normal;
+         color: #414141;
+      }
+      #rsvpForm{
+         background-color: #f7efe9;
+         font-family:'Open Sans', sans-serif;
+      }
 
 #gallery {
    /* padding-top:50px; */
@@ -200,8 +228,9 @@ body {
          font-style: italic;
          color: #414141;
       }
-      #guestbookPink{
+      #guestbookForm{
          background-color: #f7efe9;
+         font-family:'Open Sans', sans-serif;
       }
 
 #gifts{
@@ -217,9 +246,13 @@ body {
          font-style: italic;
          color: #414141;
       }
+      #gifts .container-fluid{
+         width: 650px;
+         margin-top: 20px;
+      }
       #gifts p{
          font-family: 'Open Sans', sans-serif;
-         font-size: 20px;
+         font-size: 25px;
          font-weight: normal;
          color: #414141;
       }
@@ -237,8 +270,15 @@ body {
          font-style: italic;
          color: #414141;
       }
-      #contactPink{
+      #contact p{
+         font-family: 'Open Sans', sans-serif;
+         font-size: 20px;
+         font-weight: normal;
+         color: #414141;
+      }
+      #contactForm{
          background-color: #f7efe9;
+         font-family: 'Open Sans', sans-serif;
       }
 
 footer{
