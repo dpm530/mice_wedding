@@ -159,7 +159,7 @@ body {
       #travelGuideBody #whereToEat p{
          font-family: 'Open Sans', sans-serif;
          font-size: 22px;
-         font-weight: normal;
+         font-weight: 100;
          color: #414141;
       }
 
