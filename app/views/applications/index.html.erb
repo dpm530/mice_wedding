@@ -37,20 +37,16 @@
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login
                         <span class="caret"></span>
                      </a>
-                     <div class="dropdown-menu">
+                     <div id="navLogin" class="dropdown-menu">
                         <p>For the bride and groom only</p>
-                        <form class="form-inline" action="/" method="post">
+                        <form class="form-inline" action="/applications" method="post">
                            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
                            <div class="form-group">
-                              <label for="name">Name:</label>
-                              <input class="form-control" type="text" name="name" value="">
-                           </div>
-                           <div class="form-group">
-                              <label for="password">Password:</label>
-                              <input class="form-control" type="text" name="password" value="">
+                              <label for="username">Username:</label>
+                              <input class="form-control" type="text" name="username" value="">
                            </div>
 
-                           <button class="btn btn-default" type="button" name="button">Login</button>
+                           <button class="btn btn-default" type="submit">Login</button>
                         </form>
                      </div>
                   </li>
@@ -124,7 +120,7 @@
                <p>Address: An der Apostelkirche 1, 10783 Berlin</p>
             </div>
             <div class="col-sm-4">
-               <img src="/assets/wedding1.jpg" alt="pic">
+               <img src="/assets/wedding1.jpg" alt="pic" style="width: 100%;">
             </div>
          </div><br>
       </div><br>
@@ -151,7 +147,7 @@
                <h4>Upcoming Events</h4>
             </div>
             <div class="row">
-               <div class="col-sm-4 col-sm-offset-2">
+               <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
                   <img src="/assets/travel1.jpg" alt="pic" style="width: 100%;">
                </div>
                <div class="col-sm-4">
@@ -166,12 +162,12 @@
                   <h5>Café am Neuen See or Prater Garten</h5>
                   <h5>Details to follow</h5>
                </div>
-               <div class="col-sm-4">
+               <div id="upcomingEvents" class="col-sm-4">
                   <img src="/assets/travel2.jpg" alt="pic" style="width: 100%;">
                </div>
             </div>
             <div class="row">
-               <div class="col-sm-4 col-sm-offset-2">
+               <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
                   <img src="/assets/wedding1.jpg" alt="pic">
                </div>
                <div class="col-sm-4">
@@ -186,7 +182,7 @@
                   <h5>Krongut Bornstedt</h5>
                   <h5>Ribbeckstraße 6/7 14469 Potsdam</h5>
                </div>
-               <div class="col-sm-4">
+               <div id="upcomingEvents" class="col-sm-4">
                   <img src="/assets/travel4.jpg" alt="pic" style="width: 100%;">
                </div>
             </div><br>
@@ -229,7 +225,7 @@
             <div class="container-fluid text-center">
                <h4>Hotel Recommendations</h4>
             </div><br>
-            <div class="row">
+            <div id="recommendations" class="row">
                <div class="col-sm-4">
                   <div class="thumbnail">
                      <img src="/assets/travel6.jpg" alt="" style="width: 100%;">
@@ -274,7 +270,7 @@
             <div class="page-header text-center">
                <h4>Memory Lane</h4>
             </div>
-            <div class="row">
+            <div id="memoryLane" class="row">
                <div class="col-sm-4 col-sm-offset-2">
                   <img src="/assets/travel9.jpg" alt="" style="width:100%;">
                   <div class="bottom-left"><p>First date</p></div>
@@ -294,7 +290,7 @@
             <div class="page-header text-center">
                <h4>Recommendations</h4>
             </div>
-            <div class="row">
+            <div id="recommendations" class="row">
                <div class="col-sm-4">
                   <div class="thumbnail">
                      <img src="/assets/travel11.jpg" alt="" style="width: 100%;">
@@ -335,7 +331,7 @@
             <div class="page-header text-center">
                <h4>What to do in Berlin</h4>
             </div>
-            <div class="row">
+            <div id="activities" class="row">
                <div class="col-sm-3">
                   <div class="thumbnail">
                      <img src="/assets/travel14.jpg" alt="" style="width: 100%;">
@@ -373,7 +369,7 @@
                   </div>
                </div>
             </div>
-            <div class="row">
+            <div id="activities" class="row">
                <div class="col-sm-3">
                   <div class="thumbnail">
                      <img src="/assets/travel18.jpg" alt="" style="width: 100%;">
@@ -411,7 +407,7 @@
                   </div>
                </div>
             </div>
-            <div class="row">
+            <div id="activities" class="row">
                <div class="col-sm-3">
                   <div class="thumbnail">
                      <img src="/assets/travel22.jpg" alt="" style="width: 100%;">
@@ -441,7 +437,7 @@
             <div class="page-header text-center">
                <h4>Where to eat</h4>
             </div>
-            <div class="row">
+            <div id="activities" class="row">
                <div id="whereToEat" class="col-sm-3">
                   <p>BECAUSE IN BERLIN EVERYONE SPEAKS FOOD</p>
                   <p>Mayra's favorite food blogs</p>

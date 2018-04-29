@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="page-header">
+            <h1>Welcome</h1>
+         </div>
+         <h3>RSVP</h3>
+         <table class="table table-bordered">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Mobile Number</th>
+                  <th>Attending</th>
+                  <th>Comment</th>
+               </tr>
+            </thead>
+            <tbody>
+               <% @rsvps.each do |rsvp|%>
+               <tr>
+                  <td><%= rsvp.first_name%> <%= rsvp.last_name %></td>
+                  <td><%= rsvp.email %></td>
+                  <td><%= rsvp.mobile_number %></td>
+                  <td><%= rsvp.attending %></td>
+                  <td><%= rsvp.comment %></td>
+               </tr>
+               <% end %>
+            </tbody>
+         </table>
+
+         <h3>Guestbook</h3>
+         <table class="table table-bordered">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Message</th>
+               </tr>
+            </thead>
+            <tbody>
+               <% @guestbook_messages.each do |guestbook|%>
+               <tr>
+                  <td><%= guestbook.name %></td>
+                  <td><%= guestbook.message %></td>
+               </tr>
+               <% end %>
+            </tbody>
+         </table>
+
+         <h3>Contact</h3>
+         <table class="table table-bordered">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Subject</th>
+                  <th>Message</th>
+               </tr>
+            </thead>
+            <tbody>
+               <% @contacts.each do |contact|%>
+               <tr>
+                  <td><%= contact.name %></td>
+                  <td><%= contact.email %></td>
+                  <td><%= contact.subject %></td>
+                  <td><%= contact.message %></td>
+               </tr>
+               <% end %>
+            </tbody>
+         </table>
+      </div>
+
+   </body>
+</html>

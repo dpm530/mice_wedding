@@ -2,6 +2,10 @@ body {
    position: relative;
 }
 
+#navLogin{
+   padding: 10px;
+}
+
 #home {
    padding-top:50px;
    padding-bottom: 50px;
@@ -162,6 +166,19 @@ body {
          font-weight: 100;
          color: #414141;
       }
+      #travelBody #upcomingEvents img{
+         height: 200px;
+      }
+      #travelGuideBody #recommendations img{
+         height: 200px;
+      }
+      #travelGuideBody #activities img{
+         height: 140px;
+      }
+      #travelGuideBody #memoryLane img{
+         height: 250px;
+      }
+
 
 #rsvp{
    padding-top:50px;
@@ -191,6 +208,7 @@ body {
       #rsvpForm{
          background-color: #f7efe9;
          font-family:'Open Sans', sans-serif;
+         padding: 10px;
       }
 
 #gallery {
@@ -231,6 +249,7 @@ body {
       #guestbookForm{
          background-color: #f7efe9;
          font-family:'Open Sans', sans-serif;
+         padding: 10px;
       }
 
 #gifts{
@@ -279,6 +298,7 @@ body {
       #contactForm{
          background-color: #f7efe9;
          font-family: 'Open Sans', sans-serif;
+         padding: 10px;
       }
 
 footer{
