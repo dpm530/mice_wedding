@@ -44,6 +44,10 @@ body {
       }
       #home .container .row{
          background-color: #f7efe9;
+         border-radius: 5px;
+      }
+      #home #myCarousel img{
+         border-radius: 2px;
       }
 
 
@@ -53,24 +57,27 @@ body {
    color: black;
    background-color: #EEEEEE;
 }
-      #wedding h3{
+      #wedding #weddingHead h3{
          font-family: 'GFS Didot', serif;
          font-size: 90px;
          font-weight: normal;
          font-style: italic;
          color: #414141;
       }
-      #wedding p{
+      #wedding #weddingHead p{
          font-family: 'Raleway', sans-serif;
-         font-size: 17px;
+         font-size: 20px;
          font-weight: normal;
          color: #414141;
          text-align: justify;
       }
-      #wedding .row p{
+      #wedding img{
+         border-radius: 5px;
+      }
+      #wedding #weddingMargin p{
          font-family: 'Raleway', sans-serif;
          font-size: 18px;
-         font-weight: normal;
+         font-weight: 600;
          /* color: #414141; */
          color: black;
          text-align: justify;
@@ -111,7 +118,7 @@ body {
       }
       #travelHeader p{
          font-family: 'Raleway', sans-serif;
-         font-size: 17px;
+         font-size: 20px;
          /* font-weight: normal; */
          color: #414141;
          text-align: justify;
@@ -120,20 +127,35 @@ body {
       #travelBody h4{
          font-family: 'Raleway', sans-serif;
          font-size: 40px;
-         font-weight: normal;
+         font-weight: 600;
+         font-style: italic;
          color: #414141;
       }
       #travelBody h5{
          font-family: 'Raleway', sans-serif;
          font-size: 18px;
-         font-weight: normal;
+         font-weight: 600;
          color: black;
          text-align: justify;
       }
-      .bottom-left {
+      #travelGuideBody #memoryLane .bottom-left {
          position: absolute;
          bottom: 8px;
          left: 16px;
+         padding-left: 10px;
+      }
+      #travelGuideBody #memoryLane .bottom-left h5{
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
+         font-weight: 600;
+         color: white;
+         text-shadow: 2px 2px 5px #000000;
+      }
+      #travelGuideBody #memoryLane .bottom-left p{
+         font-family: 'Raleway', sans-serif;
+         font-size: 18px;
+         color: white;
+         text-shadow: 2px 2px 5px #000000;
       }
       #travelGuideHeader h3{
          font-family: 'GFS Didot', serif;
@@ -144,7 +166,7 @@ body {
       }
       #travelGuideHeader p{
          font-family: 'Raleway', sans-serif;
-         font-size: 17px;
+         font-size: 20px;
          /* font-weight: normal; */
          color: #414141;
          text-align: justify;
@@ -152,13 +174,29 @@ body {
       #travelGuideBody h4{
          font-family: 'Raleway', sans-serif;
          font-size: 40px;
-         font-weight: normal;
+         font-weight: 600;
+         font-style: italic;
          color: #414141;
       }
-      #travelGuideBody h5{
+      #travelGuideBody #airports h5{
          font-family: 'Raleway', sans-serif;
          font-size: 20px;
-         font-weight: normal;
+         font-weight: 600;
+         color: black;
+      }
+      #travelGuideBody #airports img{
+         border-radius: 5px;
+      }
+      #travelGuideBody #recommendations h5{
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
+         font-weight: 600;
+         color: #414141;
+      }
+      #travelGuideBody #activities h5{
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
+         font-weight: 600;
          color: #414141;
       }
       #travelGuideBody p{
@@ -168,7 +206,8 @@ body {
          /* text-align: justify; */
       }
       #travelGuideBody #whereToEat{
-         background-color: #dea27a
+         background-color: #dea27a;
+         border-radius: 5px;
       }
       #travelGuideBody #whereToEat .whereToEatText{
          font-family: 'Raleway', sans-serif;
@@ -178,18 +217,22 @@ body {
       }
       #travelBody #upcomingEvents img{
          height: 200px;
+         border-radius: 5px;
       }
       #travelGuideBody #recommendations img{
          height: 200px;
+         border-radius: 2px;
       }
       #travelGuideBody #recommendations p{
          text-align: justify;
       }
       #travelGuideBody #activities img{
          height: 140px;
+         border-radius: 2px;
       }
       #travelGuideBody #memoryLane img{
          height: 250px;
+         border-radius: 10px;
       }
       #upcomingEventsDescription{
          margin-top: 30px;
@@ -326,6 +369,9 @@ body {
          font-size: 20px;
          font-weight: normal;
          color: #414141;
+      }
+      #contact img{
+         border-radius: 5px;
       }
       #contactForm{
          background-color: #f7efe9;
