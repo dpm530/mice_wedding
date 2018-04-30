@@ -56,8 +56,8 @@
       </nav>
 
       <!-- Home Section -->
-      <div class="container-fluid text-center" id="home">
-         <div id="homePicture" class="container-fluid">
+      <div class="container-fluid" id="home">
+         <div id="homePicture" class="container-fluid text-center">
             <img src="/assets/home1.png" alt="homePic1">
          </div><br>
          <hr>
@@ -66,11 +66,16 @@
             <div class="row">
                <div class="col-sm-7">
                   <h3>Welcome</h3>
-                  <p>Welcome to our wedding website, we can’t wait to celebrate our special day with you.</p>
-                  <p>We’ve created this website as a convenient and interactive way to share all of the important details with you in the lead up to our wedding. Take a look around and don’t forget to RSVP!</p>
-                  <p>Thank you for your ongoing love and support. We are so excited to share this day with you and look forward to dancing the night away with all of our favourite people!</p>
-                  <p>As the big day draws closer, we would like to keep you informed on our wedding details as well as provide you with helpful information. Please check out our entire website for updates and additional information.</p>
-                  <p> If you have any questions that are not addressed on the website, please feel free to email us at mmhochweber@gmail.com.</p>
+                  <div class="container-fluid">
+                     <!-- <p>Welcome to our wedding website, we can’t wait to celebrate our special day with you. We’ve created this website as a convenient and interactive way to share all of the important details with you in the lead up to our wedding. Take a look around and don’t forget to RSVP!</p>
+                     <p>Thank you for your ongoing love and support. We are so excited to share this day with you and look forward to dancing the night away with all of our favourite people!</p>
+                     <p>If you have any questions that are not addressed on the website, please feel free to email us at mmhochweber@gmail.com.</p> -->
+                     <p>Welcome to our wedding website, we can’t wait to celebrate our special day with you. We’ve created this website as a convenient and interactive way to share all of the important details with you in the lead up to our wedding. Take a look around and don’t forget to RSVP!</p>
+                     <p>The Wedding Day</p>
+                     <p>When: Saturday, June 23</p>
+                     <p>Where: Zwölf-Apostel-Kirchengemeinde</p>
+                     <p>An der Apostelkirche 1, 10783 Berlin</p>
+                  </div>
                </div>
                <div class="col-sm-5"><br><br>
                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -100,7 +105,7 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
                      </a>
-                  </div>
+                  </div><br>
                </div>
             </div>
          </div>
@@ -111,16 +116,18 @@
       <div class="container-fluid" id="wedding">
          <div class="container text-center">
             <h3>The Wedding</h3>
-            <p class="text-jusify">As the big day draws closer, we would like to keep you informed on our wedding details as well as provide you with helpful information. Please check out our entire website for updates and additional information. If you have any questions that are not addressed on the website, please feel free to email us at mmhochweber@gmail.com</p>
+            <p>As the big day draws closer, we would like to keep you informed on our wedding details as well as provide you with helpful information. Please check out our entire website for updates and additional information. If you have any questions that are not addressed on the website, please feel free to email us at mmhochweber@gmail.com</p>
          </div><br>
          <div class="row">
-            <div class="col-sm-4 col-sm-offset-2">
-               <p>Church Ceremony | Saturday, June 23, 2018</p>
-               <p>Zwölf-Apostel-Kirchengemeinde</p>
-               <p>Address: An der Apostelkirche 1, 10783 Berlin</p>
-            </div>
-            <div class="col-sm-4">
-               <img src="/assets/wedding1.jpg" alt="pic" style="width: 100%;">
+            <div class="container">
+               <div id="weddingMargin" class="col-sm-4 col-sm-offset-2">
+                  <p>Church Ceremony | Saturday, June 23, 2018</p>
+                  <p>Zwölf-Apostel-Kirchengemeinde</p>
+                  <p>An der Apostelkirche 1, 10783 Berlin</p>
+               </div>
+               <div class="col-sm-4">
+                  <img src="/assets/wedding1.jpg" alt="pic" style="width: 100%;">
+               </div>
             </div>
          </div><br>
       </div><br>
@@ -137,53 +144,60 @@
 
       <!-- Travel Section -->
       <div class="container-fluid" id="travel">
-         <div id="travelHeader" class="page-header text-center">
+         <div id="travelHeader" class="container text-center">
             <h3>Travel</h3>
-            <p>Are your bags packed and ready to go? Check out the agenda we have planned for you.</p>
-            <!-- <p>Are your bags packed and ready to go? We have a few pointers so you can make the most out of your experience in Berlin. We touch on everything from hotel recommendation, our favorite bars, restaurants and beer-gardens and a spectrum of activities running from local to touristic to novel. We love this city and look forward to giving you a taste of some of the local flavour.</p> -->
+            <p>Coming from out of town? We have a few pointers so you can make the most out of your experience in Berlin. We love this city and look forward to giving you a taste of some of the local flavour.</p>
          </div>
          <div id="travelBody" class="container">
             <div class="page-header text-center">
                <h4>Upcoming Events</h4>
             </div>
             <div class="row">
-               <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
-                  <img src="/assets/travel1.jpg" alt="pic" style="width: 100%;">
+               <div class="container">
+                  <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
+                     <img src="/assets/travel1.jpg" alt="pic" style="width: 100%;">
+                  </div>
+                  <div id="upcomingEventsDescription" class="col-sm-4">
+                     <h5>BBQ in the Park | Thursday, June 21, 2018</h5>
+                     <h5>Volkspark Friedrich</h5>
+                     <h5>Details to follow</h5>
+                  </div>
                </div>
-               <div class="col-sm-4">
-                  <h5>BBQ in the Park | Thursday, June 21, 2018</h5>
-                  <h5>Volkspark Friedrich</h5>
-                  <h5>Details to follow</h5>
-               </div>
-            </div>
+            </div><br>
             <div class="row">
-               <div class="col-sm-4 col-sm-offset-2">
-                  <h5>Drinks in a Beer Garden | Friday, June 22, 2018</h5>
-                  <h5>Café am Neuen See or Prater Garten</h5>
-                  <h5>Details to follow</h5>
+               <div class="">
+                  <div id="upcomingEventsDescription" class="col-sm-4 col-sm-offset-2">
+                     <h5>Drinks in a Beer Garden | Friday, June 22, 2018</h5>
+                     <h5>Café am Neuen See or Prater Garten</h5>
+                     <h5>Details to follow</h5>
+                  </div>
+                  <div id="upcomingEvents" class="col-sm-4">
+                     <img src="/assets/travel2.jpg" alt="pic" style="width: 100%;">
+                  </div>
                </div>
-               <div id="upcomingEvents" class="col-sm-4">
-                  <img src="/assets/travel2.jpg" alt="pic" style="width: 100%;">
-               </div>
-            </div>
+            </div><br>
             <div class="row">
-               <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
-                  <img src="/assets/wedding1.jpg" alt="pic">
+               <div class="container">
+                  <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
+                     <img src="/assets/wedding1.jpg" alt="pic">
+                  </div>
+                  <div id="upcomingEventsDescription" class="col-sm-4">
+                     <h5>Church Ceremony | Saturday, June 23, 2018</h5>
+                     <h5>Zwölf-Apostel-Kirchengemeinde</h5>
+                     <h5>An der Apostelkirche 1, 10783 Berlin</h5>
+                  </div>
                </div>
-               <div class="col-sm-4">
-                  <h5>Church Ceremony | Saturday, June 23, 2018</h5>
-                  <h5>Zwölf-Apostel-Kirchengemeinde</h5>
-                  <h5>Address: An der Apostelkirche 1, 10783 Berlin</h5>
-               </div>
-            </div>
+            </div><br>
             <div class="row">
-               <div class="col-sm-4 col-sm-offset-2">
-                  <h5>Wedding Reception - Dinner & Dance | Saturday, June 23, 2018</h5>
-                  <h5>Krongut Bornstedt</h5>
-                  <h5>Ribbeckstraße 6/7 14469 Potsdam</h5>
-               </div>
-               <div id="upcomingEvents" class="col-sm-4">
-                  <img src="/assets/travel4.jpg" alt="pic" style="width: 100%;">
+               <div class="container">
+                  <div id="upcomingEventsDescription" class="col-sm-4 col-sm-offset-2">
+                     <h5>Wedding Reception - Dinner & Dance | Saturday, June 23, 2018</h5>
+                     <h5>Krongut Bornstedt</h5>
+                     <h5>Ribbeckstraße 6/7 14469 Potsdam</h5>
+                  </div>
+                  <div id="upcomingEvents" class="col-sm-4">
+                     <img src="/assets/travel4.jpg" alt="pic" style="width: 100%;">
+                  </div>
                </div>
             </div><br>
          </div><br>
@@ -193,7 +207,7 @@
          <div id="travelGuideHeader" class="container">
             <div class="container text-center">
                <h3>Travel Guide</h3>
-               <p class="text-jusify">We have a few pointers so you can make the most out of your experience in Berlin. We touch on everything from hotel recommendation, our favorite bars, restaurants and beer-gardens and a spectrum of activities running from local to touristic to novel. We love this city and look forward to giving you a taste of some of the local flavor.</p>
+               <p>We have a few pointers so you can make the most out of your experience in Berlin. We touch on everything from hotel recommendation, our favorite bars, restaurants and beer-gardens and a spectrum of activities running from local to touristic to novel. We love this city and look forward to giving you a taste of some of the local flavor.</p>
             </div><br>
             <div id="travelGuideBody" class="container">
                <div class="row">
@@ -231,11 +245,11 @@
                      <img src="/assets/travel6.jpg" alt="" style="width: 100%;">
                      <div class="caption">
                         <h5>Hotels</h5>
-                        <p>-Trendy: 25 Hours Hotel</p>
-                        <p>-Cool: Michelberger Hotel</p>
-                        <p>-Unique: Radisson Blu Hotel</p>
-                        <p>-Central: Parkinn Alexanderplatz</p>
-                        <p>-Budget: Circus Hotel Hostel</p>
+                        <p>Trendy: 25 Hours Hotel</p>
+                        <p>Cool: Michelberger Hotel</p>
+                        <p>Unique: Radisson Blu Hotel</p>
+                        <p>Central: Parkinn Alexanderplatz</p>
+                        <p>Budget: Circus Hotel Hostel</p>
                      </div>
                   </div>
                </div>
@@ -512,7 +526,7 @@
 
                   <h4>Mayra & Mario</h4>
                   <p>June 23,2018</p>
-                  <p>You're invited to our wedding celebration! Please RSVP so we can acommodate you.</p>
+                  <p>You're invited to our wedding celebration! Please RSVP!</p><br>
 
                   <form class="text-left" action="/users" method="post">
                      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
@@ -530,8 +544,8 @@
                         <input type="email" name="user[email]" class="form-control" id="email">
                      </div>
                      <div class="form-group">
-                        <label for="mobile_number">Mobile Number (to be added to the wedding whatsapp group):</label>
-                        <input type="tel" name="user[mobile_number]" class="form-control" id="mobile_number">
+                        <label for="mobile_number">Mobile Number:</label>
+                        <input type="number" name="user[mobile_number]" class="form-control" id="mobile_number">
                      </div>
                      <p>Will you be attending?</p>
                      <div class="radio">
@@ -590,7 +604,7 @@
          </div>
          <div class="container">
             <div class="row">
-               <div id="guestbookForm" class="col-sm-5 col-sm-offset-1">
+               <div id="guestbookForm" class="col-sm-4 col-sm-offset-1">
 
                   <form method="post" action="/guestbooks">
                      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
@@ -608,10 +622,10 @@
 
                </div>
                <div class="container-fluid">
-                  <div id="guestbookMessages" class="col-sm-5 col-sm-offset-1">
+                  <div id="guestbookMessages" class="col-sm-6 col-sm-offset-1">
                      <% @guestbook_messages.each do |guestbook| %>
-                        <p>Name: <%= guestbook.name %></p>
-                        <p>Message: <%= guestbook.message %></p>
+                        <p><bold><%= guestbook.name %></bold> says:</p>
+                        <p><%= guestbook.message %></p>
                         <hr>
                      <% end %>
                   </div>
@@ -636,73 +650,77 @@
       <div class="container-fluid text-center" id="contact">
          <div class="container">
             <div class="row">
-               <div class="col-sm-6">
-                  <h3>Contact Us</h3>
-                  <p>Telephone: 123-456-7890</p>
-                  <p>Email: mmhochweber@gmail.com</p>
-               </div>
-               <div class="col-sm-6">
-                  <img src="/assets/contact1.jpg" alt="pic" style="width: 100%;">
+               <div class="container">
+                  <div id="contactDescription1" class="col-sm-6">
+                     <h3>Contact Us</h3>
+                     <p>Telephone: 123-456-7890</p>
+                     <p>Email: mmhochweber@gmail.com</p>
+                  </div>
+                  <div class="col-sm-6">
+                     <img src="/assets/contact1.jpg" alt="pic" style="width: 100%;">
+                  </div>
                </div>
             </div><br>
          </div>
          <div class="container">
             <div class="row">
-               <div id="contactForm" class="col-sm-6">
-                  <div class="container-fluid text-left">
+               <div class="container">
+                  <div id="contactForm" class="col-sm-6">
+                     <div class="container-fluid text-left">
 
-                     <!-- Errors -->
-                     <% if flash[:errors] %>
+                        <!-- Errors -->
+                        <% if flash[:errors] %>
                         <% flash[:errors].each do |error| %>
-                           <div class="alert alert-danger alert-dismissible" role="alert" id="errors">
-                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                 <span aria-hidden="true">&times;</span>
-                              </button>
-                              <strong><%= error %></strong>
-                           </div>
+                        <div class="alert alert-danger alert-dismissible" role="alert" id="errors">
+                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                           <strong><%= error %></strong>
+                        </div>
                         <% end %>
-                     <% end %>
-                     <!-- End Errors -->
+                        <% end %>
+                        <!-- End Errors -->
 
-                     <!-- Notices -->
-                     <% if flash[:notice] %>
+                        <!-- Notices -->
+                        <% if flash[:notice] %>
                         <div class="alert alert-success alert-dismissible" role="alert" id="notice">
                            <% flash[:notice].each do |notice| %>
-                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                 <span aria-hidden="true">&times;</span>
-                              </button>
-                              <span><%= notice %></span>
+                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                           <span><%= notice %></span>
                            <% end %>
                         </div>
-                     <% end %>
-                     <!-- End Notices -->
+                        <% end %>
+                        <!-- End Notices -->
 
-                     <form action="/contacts" method="post">
-                        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+                        <form action="/contacts" method="post">
+                           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
 
-                        <div class="form-group">
-                           <label for="name">Name:</label>
-                           <input type="text" name="contact[name]" class="form-control" id="name">
-                        </div>
-                        <div class="form-group">
-                           <label for="email">Email:</label>
-                           <input type="email" name="contact[email]" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                           <label for="subject">Subject:</label>
-                           <input type="text" name="contact[subject]" class="form-control" id="subject">
-                        </div>
-                        <div class="form-group">
-                           <label for="message">Message:</label>
-                           <textarea class="form-control" name="contact[message]" id="message" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                     </form>
+                           <div class="form-group">
+                              <label for="name">Name:</label>
+                              <input type="text" name="contact[name]" class="form-control" id="name">
+                           </div>
+                           <div class="form-group">
+                              <label for="email">Email:</label>
+                              <input type="email" name="contact[email]" class="form-control" id="email">
+                           </div>
+                           <div class="form-group">
+                              <label for="subject">Subject:</label>
+                              <input type="text" name="contact[subject]" class="form-control" id="subject">
+                           </div>
+                           <div class="form-group">
+                              <label for="message">Message:</label>
+                              <textarea class="form-control" name="contact[message]" id="message" rows="5"></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                     </div>
                   </div>
-               </div>
-               <div class="col-sm-6">
-                  <h3>Get in touch</h3>
-                  <p>Do you have questions?</p>
+                  <div id="contactDescription2" class="col-sm-6">
+                     <h3>Get in touch</h3>
+                     <p>Do you have questions?</p>
+                  </div>
                </div>
             </div>
          </div>

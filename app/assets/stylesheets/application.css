@@ -36,10 +36,11 @@ body {
       }
       #home p{
          /* font: normal normal normal 16px/1.4em brandon-grot-w01-light,sans-serif; */
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 17px;
          font-weight: normal;
          color: #414141;
+         text-align: justify;
       }
       #home .container .row{
          background-color: #f7efe9;
@@ -60,17 +61,22 @@ body {
          color: #414141;
       }
       #wedding p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 17px;
          font-weight: normal;
          color: #414141;
+         text-align: justify;
       }
       #wedding .row p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 18px;
          font-weight: normal;
          /* color: #414141; */
          color: black;
+         text-align: justify;
+      }
+      #weddingMargin{
+         margin-top: 80px;
       }
 
 #countdown {
@@ -104,22 +110,25 @@ body {
          color: #414141;
       }
       #travelHeader p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 17px;
          font-weight: normal;
          color: #414141;
+         text-align: justify;
+
       }
       #travelBody h4{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 40px;
          font-weight: normal;
          color: #414141;
       }
       #travelBody h5{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 18px;
          font-weight: normal;
          color: black;
+         text-align: justify;
       }
       .bottom-left {
          position: absolute;
@@ -134,34 +143,36 @@ body {
          color: #414141;
       }
       #travelGuideHeader p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 17px;
          font-weight: normal;
          color: #414141;
+         text-align: justify;
       }
       #travelGuideBody h4{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 40px;
          font-weight: normal;
          color: #414141;
       }
       #travelGuideBody h5{
-         font-family: 'Open Sans', sans-serif;
-         font-size: 25px;
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
          font-weight: normal;
          color: #414141;
       }
       #travelGuideBody p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 17px;
          font-weight: normal;
          color: #414141;
+         text-align: justify;
       }
       #travelGuideBody #whereToEat{
          background-color: #FFFFFF;
       }
       #travelGuideBody #whereToEat p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 22px;
          font-weight: 100;
          color: #414141;
@@ -177,6 +188,9 @@ body {
       }
       #travelGuideBody #memoryLane img{
          height: 250px;
+      }
+      #upcomingEventsDescription{
+         margin-top: 30px;
       }
 
 
@@ -194,21 +208,22 @@ body {
          color: #414141;
       }
       #rsvp h4{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 25px;
          font-weight: normal;
          color: #414141;
       }
       #rsvp p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 17px;
          font-weight: normal;
          color: #414141;
       }
       #rsvpForm{
          background-color: #f7efe9;
-         font-family:'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          padding: 10px;
+         border-radius: 5px;
       }
 
 #gallery {
@@ -238,6 +253,7 @@ body {
          min-height: 254px;
          border: 1px solid black;
          background-color: white;
+         padding: 20px;
       }
       #guestbook h3{
          font-family: 'GFS Didot', serif;
@@ -248,8 +264,9 @@ body {
       }
       #guestbookForm{
          background-color: #f7efe9;
-         font-family:'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          padding: 10px;
+         border-radius: 5px;
       }
 
 #gifts{
@@ -270,7 +287,7 @@ body {
          margin-top: 20px;
       }
       #gifts p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 25px;
          font-weight: normal;
          color: #414141;
@@ -290,15 +307,22 @@ body {
          color: #414141;
       }
       #contact p{
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          font-size: 20px;
          font-weight: normal;
          color: #414141;
       }
       #contactForm{
          background-color: #f7efe9;
-         font-family: 'Open Sans', sans-serif;
+         font-family: 'Raleway', sans-serif;
          padding: 10px;
+         border-radius: 5px;
+      }
+      #contactDescription1{
+         margin-top: 40px;
+      }
+      #contactDescription2{
+         margin-top: 105px;
       }
 
 footer{
