@@ -452,9 +452,9 @@
                <h4>Where to eat</h4>
             </div>
             <div id="activities" class="row">
-               <div id="whereToEat" class="col-sm-3">
-                  <p>BECAUSE IN BERLIN EVERYONE SPEAKS FOOD</p>
-                  <p>Mayra's favorite food blogs</p>
+               <div id="whereToEat" class="col-sm-3 text-center">
+                  <p class="whereToEatText">BECAUSE IN BERLIN EVERYONE SPEAKS FOOD</p>
+                  <p class="whereToEatText">Mayra's favorite food blogs</p>
                </div>
                <div class="col-sm-3">
                   <div class="thumbnail">
@@ -624,8 +624,8 @@
                <div class="container-fluid">
                   <div id="guestbookMessages" class="col-sm-6 col-sm-offset-1">
                      <% @guestbook_messages.each do |guestbook| %>
-                        <p><bold><%= guestbook.name %></bold> says:</p>
-                        <p><%= guestbook.message %></p>
+                        <p class="name"><%= guestbook.name %>:</p>
+                        <p class="message"><%= guestbook.message %></p>
                         <hr>
                      <% end %>
                   </div>
@@ -638,7 +638,7 @@
       <!-- Gifts Section -->
       <div class="container-fluid text-center" id="gifts">
          <div class="container">
-            <h3>Gifts</h3>
+            <h3>Gifts</h3><br>
             <div class="container-fluid">
                <p class="text-jusify">Your love, laughter and company on our wedding day is the greatest gift of all! However, if you wish to honour us with a gift, any monetary contributions towards planning our future together would also be greatly appreciated. A wishing-well will be made available on the day.</p>
             </div>

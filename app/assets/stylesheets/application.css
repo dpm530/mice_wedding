@@ -112,7 +112,7 @@ body {
       #travelHeader p{
          font-family: 'Raleway', sans-serif;
          font-size: 17px;
-         font-weight: normal;
+         /* font-weight: normal; */
          color: #414141;
          text-align: justify;
 
@@ -145,7 +145,7 @@ body {
       #travelGuideHeader p{
          font-family: 'Raleway', sans-serif;
          font-size: 17px;
-         font-weight: normal;
+         /* font-weight: normal; */
          color: #414141;
          text-align: justify;
       }
@@ -164,24 +164,26 @@ body {
       #travelGuideBody p{
          font-family: 'Raleway', sans-serif;
          font-size: 17px;
-         font-weight: normal;
          color: #414141;
-         text-align: justify;
+         /* text-align: justify; */
       }
       #travelGuideBody #whereToEat{
-         background-color: #FFFFFF;
+         background-color: #dea27a
       }
-      #travelGuideBody #whereToEat p{
+      #travelGuideBody #whereToEat .whereToEatText{
          font-family: 'Raleway', sans-serif;
          font-size: 22px;
-         font-weight: 100;
-         color: #414141;
+         color: white;
+         padding: 10px;
       }
       #travelBody #upcomingEvents img{
          height: 200px;
       }
       #travelGuideBody #recommendations img{
          height: 200px;
+      }
+      #travelGuideBody #recommendations p{
+         text-align: justify;
       }
       #travelGuideBody #activities img{
          height: 140px;
@@ -221,9 +223,11 @@ body {
       }
       #rsvpForm{
          background-color: #f7efe9;
-         font-family: 'Raleway', sans-serif;
+         font-family: 'Raleway:400', sans-serif;
          padding: 10px;
          border-radius: 5px;
+         color: #414141;
+         font-weight: 400;
       }
 
 #gallery {
@@ -255,6 +259,18 @@ body {
          background-color: white;
          padding: 20px;
       }
+      #guestbookMessages .name{
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
+         color: #414141;
+         font-weight: bold;
+      }
+      #guestbookMessages .message{
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
+         font-weight: normal;
+         color: #414141;
+      }
       #guestbook h3{
          font-family: 'GFS Didot', serif;
          font-size: 90px;
@@ -264,9 +280,11 @@ body {
       }
       #guestbookForm{
          background-color: #f7efe9;
-         font-family: 'Raleway', sans-serif;
+         font-family: 'Raleway:400', sans-serif;
          padding: 10px;
          border-radius: 5px;
+         font-weight: 400;
+         color: #414141;
       }
 
 #gifts{
@@ -282,15 +300,12 @@ body {
          font-style: italic;
          color: #414141;
       }
-      #gifts .container-fluid{
-         width: 650px;
-         margin-top: 20px;
-      }
       #gifts p{
          font-family: 'Raleway', sans-serif;
          font-size: 25px;
          font-weight: normal;
          color: #414141;
+         text-align: justify;
       }
 
 #contact {
@@ -314,9 +329,11 @@ body {
       }
       #contactForm{
          background-color: #f7efe9;
-         font-family: 'Raleway', sans-serif;
+         font-family: 'Raleway:400', sans-serif;
          padding: 10px;
          border-radius: 5px;
+         color: #414141;
+         font-weight: 400;
       }
       #contactDescription1{
          margin-top: 40px;
