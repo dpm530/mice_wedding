@@ -69,6 +69,33 @@
                   </li>
                </ul>
             </div>
+            <div class="container text-center">
+               <!-- Errors -->
+               <% if flash[:errors] %>
+               <% flash[:errors].each do |error| %>
+               <div class="alert alert-danger alert-dismissible" role="alert" id="errors">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+                  <strong><%= error %></strong>
+               </div>
+               <% end %>
+               <% end %>
+               <!-- End Errors -->
+
+               <!-- Notices -->
+               <% if flash[:notice] %>
+               <div class="alert alert-success alert-dismissible" role="alert" id="notice">
+                  <% flash[:notice].each do |notice| %>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+                  <span><%= notice %></span>
+                  <% end %>
+               </div>
+               <% end %>
+               <!-- End Notices -->
+            </div>
          </div>
       </nav>
 
@@ -561,34 +588,6 @@
          <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                <div id="rsvpForm" class="container-fluid">
-
-                  <!-- Errors -->
-                  <% if flash[:errors] %>
-                     <% flash[:errors].each do |error| %>
-                        <div class="alert alert-danger alert-dismissible" role="alert" id="errors">
-                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                           <strong><%= error %></strong>
-                        </div>
-                     <% end %>
-                  <% end %>
-                  <!-- End Errors -->
-
-                  <!-- Notices -->
-                  <% if flash[:notice] %>
-                     <div class="alert alert-success alert-dismissible" role="alert" id="notice">
-                        <% flash[:notice].each do |notice| %>
-                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                           <span><%= notice %></span>
-                        <% end %>
-                     </div>
-                  <% end %>
-                  <!-- End Notices -->
-
-
                   <h4>Mayra & Mario</h4>
                   <p>Saturday June 23, 2018</p>
                   <p>You're invited to our wedding celebration! Please RSVP!</p><br>
@@ -733,7 +732,7 @@
                      <div class="container-fluid text-left">
 
                         <!-- Errors -->
-                        <% if flash[:errors] %>
+                        <!-- <% if flash[:errors] %>
                         <% flash[:errors].each do |error| %>
                         <div class="alert alert-danger alert-dismissible" role="alert" id="errors">
                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -742,11 +741,11 @@
                            <strong><%= error %></strong>
                         </div>
                         <% end %>
-                        <% end %>
+                        <% end %> -->
                         <!-- End Errors -->
 
                         <!-- Notices -->
-                        <% if flash[:notice] %>
+                        <!-- <% if flash[:notice] %>
                         <div class="alert alert-success alert-dismissible" role="alert" id="notice">
                            <% flash[:notice].each do |notice| %>
                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -755,7 +754,7 @@
                            <span><%= notice %></span>
                            <% end %>
                         </div>
-                        <% end %>
+                        <% end %> -->
                         <!-- End Notices -->
 
                         <form action="/contacts" method="post">
