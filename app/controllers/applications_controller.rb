@@ -1,7 +1,7 @@
 class ApplicationsController < ApplicationController
 
    def index
-      @guestbook_messages=Guestbook.all
+      @guestbook_messages=Guestbook.all.reverse_order
    end
 
    def create
@@ -17,7 +17,7 @@ class ApplicationsController < ApplicationController
    def show
       @guestbook_messages=Guestbook.all
       @contacts=Contact.all
-      @rsvps=User.all 
+      @rsvps=User.all
    end
 
 

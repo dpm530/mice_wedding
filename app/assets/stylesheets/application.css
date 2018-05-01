@@ -2,9 +2,38 @@ body {
    position: relative;
 }
 
-#navLogin{
-   padding: 10px;
+#navbar{
+   margin-bottom: 0;
+   border: 0;
+   letter-spacing: 0.5px;
+   border-radius: 0;
 }
+      #navbar .navbar-brand{
+         font-family: 'GFS Didot', serif;
+         font-size: 17px;
+         font-weight: normal;
+      }
+      #navbar .navbar-brand svg{
+         margin-top: -10px;
+      }
+      #navbar #myNavbar a{
+         font-family: 'GFS Didot', serif;
+         font-size: 15px;
+         font-weight: normal;
+         /* color: #414141; */
+      }
+      #navLogin{
+         padding: 15px;
+         background-color: #f7efe9;
+         font-family: 'GFS Didot', serif;
+         font-size: 15px;
+         font-weight: normal;
+      }
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+         color: white !important;
+         background-color: #dea27a !important;
+      }
+
 
 #home {
    padding-top:50px;
@@ -22,9 +51,33 @@ body {
          height: 600px;
       }
       #homePicture img{
-         width:560px;
-         /* height:100%; */
-         margin-top: 155px;
+         margin-top: 130px;
+      }
+      #homePicture .container{
+         position: relative;
+         text-align: center;
+         color: white;
+      }
+      #homePicture .container .centered1{
+         position: absolute;
+         top: 68%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-family: 'Raleway', sans-serif;
+         font-size: 40px;
+         font-weight: normal;
+         color: white;
+         border-top: 2px solid white;
+      }
+      #homePicture .container .centered2{
+         position: absolute;
+         top: 75%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-family: 'Raleway', sans-serif;
+         font-size: 40px;
+         font-weight: normal;
+         color: white;
       }
       #home h3{
          /* font: normal normal normal 90px/1.4em didot-w01-italic,serif; */
@@ -46,8 +99,8 @@ body {
          background-color: #f7efe9;
          border-radius: 5px;
       }
-      #home #myCarousel img{
-         border-radius: 2px;
+      #home .col-sm-5 img{
+         border-radius: 5px;
       }
 
 
@@ -77,13 +130,20 @@ body {
       #wedding #weddingMargin p{
          font-family: 'Raleway', sans-serif;
          font-size: 18px;
-         font-weight: 600;
-         /* color: #414141; */
+         font-weight: normal;
+         color: black;
+         text-align: justify;
+      }
+      #wedding #weddingMargin .subtitle{
+         font-family: 'GFS Didot', serif;
+         font-size: 25px;
+         font-weight: bold;
+         font-style: italic;
          color: black;
          text-align: justify;
       }
       #weddingMargin{
-         margin-top: 80px;
+         margin-top: 75px;
       }
 
 #countdown {
@@ -99,8 +159,21 @@ body {
          font-style: italic;
          color: #414141;
       }
-      #countdown p{
+      #countdown #demo{
          color: #e2bea8;
+         font-family: 'GFS Didot', serif;
+         font-size: 100px;
+         font-weight: normal;
+      }
+      #countdown .text{
+         /* color: #414141;
+         font-family: 'GFS Didot', serif;
+         font-size: 60px;
+         font-weight: normal; */
+         font-family: 'Raleway', sans-serif;
+         font-size: 50px;
+         font-weight: normal;
+         color: #414141;
       }
 
 #travel {
@@ -131,10 +204,26 @@ body {
          font-style: italic;
          color: #414141;
       }
-      #travelBody h5{
+      #travelBody .subtitle{
+         font-family: 'GFS Didot', serif;
+         font-size: 25px;
+         font-weight: bold;
+         font-style: italic;
+         color: black;
+         text-align: justify;
+      }
+      #travelBody h6{
          font-family: 'Raleway', sans-serif;
          font-size: 18px;
-         font-weight: 600;
+         font-weight: normal;
+         color: black;
+         text-align: justify;
+      }
+      #travelBody .italic{
+         font-family: 'Raleway', sans-serif;
+         font-size: 18px;
+         font-weight: normal;
+         font-style: italic;
          color: black;
          text-align: justify;
       }
@@ -187,17 +276,35 @@ body {
       #travelGuideBody #airports img{
          border-radius: 5px;
       }
+      #travelGuideBody #airports button{
+         background-color: #dea27a;
+         color: white;
+      }
+      #travelGuideBody #airports a{
+         text-decoration: none;
+         color: inherit;
+      }
       #travelGuideBody #recommendations h5{
          font-family: 'Raleway', sans-serif;
          font-size: 20px;
          font-weight: 600;
          color: #414141;
       }
+      #travelGuideBody #recommendations a{
+         color: #dea27a;
+      }
+
       #travelGuideBody #activities h5{
          font-family: 'Raleway', sans-serif;
          font-size: 20px;
          font-weight: 600;
          color: #414141;
+      }
+      #travelGuideBody #activities a{
+         text-decoration: none;
+      }
+      #travelGuideBody #activities .caption h5:hover{
+         color: #dea27a !important;
       }
       #travelGuideBody p{
          font-family: 'Raleway', sans-serif;
@@ -235,7 +342,7 @@ body {
          border-radius: 10px;
       }
       #upcomingEventsDescription{
-         margin-top: 30px;
+         margin-top: 20px;
       }
 
 
@@ -255,19 +362,19 @@ body {
       #rsvp h4{
          font-family: 'Raleway', sans-serif;
          font-size: 25px;
-         font-weight: normal;
+         font-weight: 600;
          color: #414141;
       }
       #rsvp p{
          font-family: 'Raleway', sans-serif;
-         font-size: 17px;
+         font-size: 20px;
          font-weight: normal;
          color: #414141;
       }
       #rsvpForm{
          background-color: #f7efe9;
          font-family: 'Raleway:400', sans-serif;
-         padding: 10px;
+         padding: 15px;
          border-radius: 5px;
          color: #414141;
          font-weight: 400;
@@ -298,9 +405,11 @@ body {
 }
       #guestbookMessages{
          min-height: 254px;
-         border: 1px solid black;
-         background-color: white;
+         border: 0.5px solid #414141;
+         border-radius: 5px;
+         background-color: #f7efe9;
          padding: 20px;
+         text-align: justify;
       }
       #guestbookMessages .name{
          font-family: 'Raleway', sans-serif;
@@ -324,7 +433,7 @@ body {
       #guestbookForm{
          background-color: #f7efe9;
          font-family: 'Raleway:400', sans-serif;
-         padding: 10px;
+         padding: 15px;
          border-radius: 5px;
          font-weight: 400;
          color: #414141;
@@ -366,23 +475,24 @@ body {
       }
       #contact p{
          font-family: 'Raleway', sans-serif;
-         font-size: 20px;
+         font-size: 25px;
          font-weight: normal;
          color: #414141;
       }
       #contact img{
          border-radius: 5px;
+         border: 20px solid #f7efe9;
       }
       #contactForm{
          background-color: #f7efe9;
          font-family: 'Raleway:400', sans-serif;
-         padding: 10px;
+         padding: 15px;
          border-radius: 5px;
          color: #414141;
          font-weight: 400;
       }
       #contactDescription1{
-         margin-top: 40px;
+         margin-top: 55px;
       }
       #contactDescription2{
          margin-top: 105px;
@@ -391,3 +501,16 @@ body {
 footer{
    background-color: #EEEEEE;
 }
+      footer h3{
+         font-family: 'GFS Didot', serif;
+         font-size: 50px;
+         font-weight: normal;
+         font-style: italic;
+         color: #414141;
+      }
+      footer p{
+         font-family: 'Raleway', sans-serif;
+         font-size: 12px;
+         font-weight: normal;
+         color: #414141;
+      }
