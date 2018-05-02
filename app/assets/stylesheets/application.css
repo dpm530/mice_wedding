@@ -64,11 +64,11 @@ body {
          left: 50%;
          transform: translate(-50%, -50%);
          font-family: 'Lato', sans-serif;
-         font-size: 35px;
+         font-size: 25px;
          font-weight: 300;
          /* font-style: italic; */
-         color: #dea27a;
-         border-top: 2px solid #dea27a;
+         color: #f8f8f8;
+         border-top: 2px solid #f8f8f8;
       }
       #homePicture .container .centered2{
          position: absolute;
@@ -76,9 +76,9 @@ body {
          left: 50%;
          transform: translate(-50%, -50%);
          font-family: 'Lato', sans-serif;
-         font-size: 35px;
+         font-size: 25px;
          font-weight: 300;
-         color: #dea27a;
+         color: #f8f8f8;
       }
       #home h3{
          /* font: normal normal normal 90px/1.4em didot-w01-italic,serif; */
