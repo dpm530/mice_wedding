@@ -20,5 +20,10 @@ class ApplicationsController < ApplicationController
       @rsvps=User.all
    end
 
+   def destroy
+      session.clear
+      return redirect_to "/"
+   end
+
 
 end
