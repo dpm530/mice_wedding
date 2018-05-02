@@ -1,4 +1,6 @@
 class ApplicationsController < ApplicationController
+   before_action :require_login, only: [:destroy, :show]
+
 
    def index
       @guestbook_messages=Guestbook.all.reverse_order
@@ -6,7 +8,8 @@ class ApplicationsController < ApplicationController
 
    def create
 
-      if params[:username]==="mayraplusmario"
+      if params[:username]==="mishabebe"
+         session[:user_id]="1"
          return redirect_to "/applications"
       end
 

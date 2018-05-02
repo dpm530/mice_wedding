@@ -31,6 +31,7 @@ gem 'rspec'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'hirb'
+gem 'mail_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
