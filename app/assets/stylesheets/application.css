@@ -144,7 +144,7 @@ body {
          text-align: justify;
       }
       #weddingMargin{
-         margin-top: 75px;
+         margin-top: 45px;
       }
 
 #countdown {
@@ -326,6 +326,7 @@ body {
       #travelBody #upcomingEvents img{
          height: 200px;
          border-radius: 5px;
+         width: 100%;
       }
       #travelGuideBody #recommendations img{
          height: 200px;
@@ -343,7 +344,7 @@ body {
          border-radius: 10px;
       }
       #upcomingEventsDescription{
-         margin-top: 20px;
+         margin-top: 5px;
       }
 
 
@@ -529,3 +530,81 @@ footer{
          font-weight: normal;
          color: #414141;
       }
+
+
+@media screen and (max-width: 600px){
+   body{
+      width:615px;
+   }
+   #homePicture{
+      width: 570px;
+   }
+   #home .row{
+      width: 570px;
+   }
+   #wedding{
+      width: 605px;
+   }
+   #weddingHead p{
+      text-align: justify;
+   }
+   #weddingMargin{
+      margin-left: 130px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+   }
+   #countdown #container{
+      width: 600px;
+   }
+   #countdown .container .text{
+      font-size: 45px;
+   }
+   #travel{
+      width:605px;
+   }
+   #travelBody .row .container{
+      display: inline-flex;
+   }
+   #travelBody .row .container #upcomingEvents img{
+      width: 300px;
+      height: 200px;
+   }
+   #travelBody .row .container #upcomingEventsDescription{
+      margin-top: 0px;
+   }
+   #travelGuideBody #airportButton{
+      margin-bottom: 20px;
+   }
+   #travelGuideBody #recommendations .thumbnail{
+      width: 450px;
+      margin-left: 45px;
+   }
+   #travelGuideBody #activities .thumbnail{
+      width: 385px;
+      margin-left: 70px;
+   }
+   #rsvp{
+      width:610px;
+   }
+   #gallery{
+      width:612px;
+   }
+   #guestbook{
+      width:610px;
+   }
+   #guestbookForm{
+      margin-bottom: 25px;
+   }
+   #gifts{
+      width:615px;
+   }
+   #contact{
+      width:605px;
+   }
+   footer{
+      width:615px
+   }
+
+
+
+}
