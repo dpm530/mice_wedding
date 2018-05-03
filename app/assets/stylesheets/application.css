@@ -438,6 +438,13 @@ body {
          font-style: italic;
          color: #414141;
       }
+      #guestbook .container p{
+         font-family: 'Raleway', sans-serif;
+         font-size: 20px;
+         font-weight: normal;
+         color: #414141;
+         /* text-align: justify; */
+      }
       #guestbookForm{
          background-color: #f7efe9;
          font-family: 'Raleway:400', sans-serif;
