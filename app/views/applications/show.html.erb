@@ -16,6 +16,8 @@
                <tr>
                   <th>Name</th>
                   <th>Email</th>
+                  <th>Arrival time and date</th>
+                  <th>Plus one</th>
                   <th>Mobile Number</th>
                   <th>Attending</th>
                   <th>Comment</th>
@@ -26,6 +28,8 @@
                <tr>
                   <td><%= rsvp.first_name%> <%= rsvp.last_name %></td>
                   <td><%= rsvp.email %></td>
+                  <td><%= rsvp.arrival %></td>
+                  <td><%= rsvp.guest %></td>
                   <td><%= rsvp.mobile_number %></td>
                   <td><%= rsvp.attending %></td>
                   <td><%= rsvp.comment %></td>

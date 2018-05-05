@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <!-- Navigation Section -->
+      <nav id=navbar class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+
+               <a class="navbar-brand" href="#home">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="95" height="40" viewBox="0 0 638 246">
+                     <g fill="none" fill-rule="evenodd">
+                        <path fill="#FFCAA1" fill-rule="nonzero" d="M273.5,115.309535 C240.717696,77.3587422 184.964333,0.101196016 124.292723,0.101196016 C58.5172513,0.101196016 0,55.0911207 0,122.680598 C0,190.270075 58.5172513,245.26 124.292723,245.26 C189.345539,245.26 240.745812,167.960962 273.5,130.051661 C273.5,126.121858 273.5,122.680598 273.5,115.309535 Z M124.292723,233.131258 C70.9160471,233.131258 12.4921466,187.906631 12.4921466,122.680598 C12.4921466,57.454565 70.9160471,12.2299383 124.292723,12.2299383 C181.44288,12.2299383 240.835209,89.321519 269.006623,122.680598 C240.835209,156.053508 180.480074,233.131258 124.292723,233.131258 Z M273.576186,115.309535 C306.358489,77.3587422 362.111853,0.101196016 422.783463,0.101196016 C488.558934,0.101196016 547.076186,55.0911207 547.076186,122.680598 C547.076186,190.270075 488.558934,245.26 422.783463,245.26 C357.730647,245.26 306.330374,167.960962 273.576186,130.051661 C273.576186,123.736978 273.576186,118.428579 273.576186,115.309535 Z M424.206047,233.131258 C477.582723,233.131258 536.006623,187.906631 536.006623,122.680598 C536.006623,57.454565 477.582723,12.2299383 424.206047,12.2299383 C367.05589,12.2299383 307.66356,89.321519 279.492147,122.680598 C307.66356,156.053508 368.018695,233.131258 424.206047,233.131258 Z"/>
+                        <path fill="#FFCAA1" fill-rule="nonzero" d="M363.5,115.309535 C330.717696,77.3587422 274.964333,0.101196016 214.292723,0.101196016 C148.517251,0.101196016 90,55.0911207 90,122.680598 C90,190.270075 148.517251,245.26 214.292723,245.26 C279.345539,245.26 330.745812,167.960962 363.5,130.051661 C363.5,126.121858 363.5,122.680598 363.5,115.309535 Z M214.292723,233.131258 C160.916047,233.131258 102.492147,187.906631 102.492147,122.680598 C102.492147,57.454565 160.916047,12.2299383 214.292723,12.2299383 C271.44288,12.2299383 330.835209,89.321519 359.006623,122.680598 C330.835209,156.053508 270.480074,233.131258 214.292723,233.131258 Z M363.576186,115.309535 C396.358489,77.3587422 452.111853,0.101196016 512.783463,0.101196016 C578.558934,0.101196016 637.076186,55.0911207 637.076186,122.680598 C637.076186,190.270075 578.558934,245.26 512.783463,245.26 C447.730647,245.26 396.330374,167.960962 363.576186,130.051661 C363.576186,123.736978 363.576186,118.428579 363.576186,115.309535 Z M514.206047,233.131258 C567.582723,233.131258 626.006623,187.906631 626.006623,122.680598 C626.006623,57.454565 567.582723,12.2299383 514.206047,12.2299383 C457.05589,12.2299383 397.66356,89.321519 369.492147,122.680598 C397.66356,156.053508 458.018695,233.131258 514.206047,233.131258 Z"/>
+                     </g>
+                  </svg>
+               </a>
+               <a class="navbar-brand" href="#home">Mayra + Mario</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/#home">Home</a></li>
+                  <li><a href="/#wedding">Wedding</a></li>
+                  <li><a href="/#countdown">Countdown</a></li>
+                  <li><a href="/users">Travel</a></li>
+                  <li><a href="/#rsvp">RSVP</a></li>
+                  <li><a href="/#gallery">Gallery</a></li>
+                  <li><a href="/#guestbook">Guestbook</a></li>
+                  <li><a href="/#gifts">Gifts</a></li>
+                  <li><a href="/#contact">Contact</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login
+                        <span class="caret"></span>
+                     </a>
+                     <div id="navLogin" class="dropdown-menu">
+                        <p>For the bride and groom only</p>
+                        <form class="form" action="/applications" method="post">
+                           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+                           <div class="form-group">
+                              <label for="username">Username:</label>
+                              <input class="form-control" type="text" name="username" value="">
+                           </div>
+
+                           <button class="btn btn-default" type="submit">Login</button>
+                        </form>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav><br>
+      <!-- End Navigation Section -->
+
+      <!-- Travel Section -->
+      <div class="container-fluid" id="travel">
+         <div id="travelHeader" class="container text-center">
+            <h3>Travel</h3>
+            <p>Coming from out of town? We have a few pointers so you can make the most out of your experience in Berlin. We love this city and look forward to giving you a taste of some of the local flavour.</p>
+         </div>
+         <div id="travelBody" class="container">
+            <div class="page-header text-center">
+               <h4>Upcoming Events</h4>
+            </div>
+            <div class="row">
+               <div class="container">
+                  <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
+                     <img src="/assets/travel1.jpg" alt="pic">
+                  </div>
+                  <div id="upcomingEventsDescription" class="col-sm-4">
+                     <h5 class="subtitle">BBQ in the Park</h5>
+                     <h6>Thursday, June 21, 2018</h6>
+                     <h6>Volkspark Friedrich</h6>
+                     <h5 class="italic">Details to follow</h5>
+                  </div>
+               </div>
+            </div><br>
+            <div class="row">
+               <div class="container">
+                  <div id="upcomingEventsDescription" class="col-sm-4 col-sm-offset-2">
+                     <h5 class="subtitle">Drinks in a Beer Garden</h5>
+                     <h6>Friday, June 22, 2018</h6>
+                     <h6>Café am Neuen See or Prater Garten</h6>
+                     <h5 class="italic">Details to follow</h5>
+                  </div>
+                  <div id="upcomingEvents" class="col-sm-4">
+                     <img src="/assets/travel2.jpg" alt="pic">
+                  </div>
+               </div>
+            </div><br>
+            <div class="row">
+               <div class="container">
+                  <div id="upcomingEvents" class="col-sm-4 col-sm-offset-2">
+                     <img src="/assets/travel3.jpg" alt="pic">
+                  </div>
+                  <div id="upcomingEventsDescription" class="col-sm-4">
+                     <h5 class="subtitle">Church Ceremony</h5>
+                     <h6>Saturday, June 23, 2018</h6>
+                     <h6>14:00 hrs</h6>
+                     <h6>Zwölf-Apostel-Kirchengemeinde</h6>
+                     <h6>An der Apostelkirche 1</h6>
+                     <h6>10783, Berlin</h6>
+                     <a href="https://goo.gl/maps/ZkgVfLcGK9q" target="_blank">Directions</a>
+                  </div>
+               </div>
+            </div><br>
+            <div class="row">
+               <div class="container">
+                  <div id="upcomingEventsDescription" class="col-sm-4 col-sm-offset-2">
+                     <h5 class="subtitle">Wedding Reception - Dinner & Dance</h5>
+                     <h6>Saturday, June 23, 2018</h6>
+                     <h6>19:00 hrs</h6>
+                     <h6>Krongut Bornstedt</h6>
+                     <h6>Ribbeckstraße 6/7</h6>
+                     <h6>14469, Potsdam</h6>
+                     <a href="https://goo.gl/maps/wfjuPmHYNYG2" target="_blank">Directions</a>
+                  </div>
+                  <div id="upcomingEvents" class="col-sm-4">
+                     <img src="/assets/travel4.jpg" alt="pic">
+                  </div>
+               </div>
+            </div><br>
+         </div><br>
+
+         <hr>
+
+         <div id="travelGuideHeader" class="container">
+            <div class="container text-center">
+               <h3>Travel Guide</h3>
+               <p>We have a few pointers so you can make the most out of your experience in Berlin. We touch on everything from hotel recommendation, our favorite bars, restaurants and beer-gardens and a spectrum of activities running from local to touristic to novel. We love this city and look forward to giving you a taste of some of the local flavor.</p>
+            </div><br>
+            <div id="travelGuideBody" class="container">
+               <div class="row">
+                  <div id="airportButton" class="col-sm-4 col-sm-offset-1">
+                     <div id="airports" class="container-fluid">
+                        <h5>Tegel Airport</h4>
+                        <p>A taxi will cost roughly 25 EUR and 30 minutes.Otherwise the TXL Express Bus costs 2.30 EUR and takes 40 min.</p>
+                     </div>
+                     <div id="airports" class="container-fluid">
+                        <h5>Schonefeld Airport</h4>
+                        <p>Being further outside the city, a taxi will cost around 40 EUR and 35 minutes or you could take the S-bahn or Regional Train for 3.30 EUR which takes between 45min - 1 hour.</p>
+                     </div>
+                     <div id="airports" class="container-fluid">
+                        <h5>Berlin Main Train Station</h5>
+                        <p>Centrally located and well connected, its easy to get around from here. Both a taxi (10 EUR) and Public Transport (2.70 EUR) take less than 10 minutes to get to AlexanderPlatz.</p>
+                     </div><br>
+                     <div id="airports" class="container-fluid">
+                        <button type="button" class="btn btn-default btn-lg"><a href="http://allaboutberlin.com/guides/planning-a-trip-to-berlin" target="_blank">More info</a></button>
+                     </div>
+                  </div>
+                  <div id="airports" class="col-sm-4 col-sm-offset-1">
+                     <img src="/assets/travel5.jpg" alt="" style="width: 100%;">
+                  </div>
+               </div>
+            </div>
+         </div><br>
+
+         <hr>
+
+         <!-- hotel recommendations -->
+         <div id="travelGuideBody" class="container">
+            <div class="container-fluid text-center">
+               <h4>Hotel Recommendations</h4>
+            </div><br>
+            <div id="recommendations" class="row">
+               <div class="col-sm-4">
+                  <div class="thumbnail">
+                     <img src="/assets/travel6.jpg" alt="" style="width: 100%;">
+                     <div class="caption">
+                        <h5>Hotels</h5>
+                        <p>Trendy: <a href="https://www.25hours-hotels.com/en/hotels/berlin/bikini-berlin" target="_blank">25 Hours Hotel</a></p>
+                        <p>Cool: <a href="http://michelbergerhotel.com/de/" target="_blank">Michelberger Hotel</a></p>
+                        <p>Unique: <a href="https://www.radissonblu.com/en/hotel-berlin" target="_blank">Radisson Blu Hotel</a></p>
+                        <p>Central: <a href="https://www.parkinn-berlin.de/" target="_blank">Parkinn Alexanderplatz</a></p>
+                        <p>Budget: <a href="https://www.circus-berlin.de/" target="_blank">Budget: Circus Hotel Hostel</a></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="thumbnail">
+                     <img src="/assets/travel7.png" alt="">
+                     <div class="caption">
+                        <h5>Airbnb</h5>
+                        <p>Airbnb has recently been under a lot of scrutiny and regulation here in Germany, thus we discourage using their service. If you decide to use Airbnb we recommend staying around Mitte or Prenzlauer Berg.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="thumbnail">
+                     <img src="/assets/travel8.jpg" alt="" style="width: 100%;">
+                     <div class="caption">
+                        <h5>Hostels</h5>
+                        <p>If you’re looking to spend your hard-earned cash on experiences rather than where you rest your head for the night - or if you don’t really plan on sleeping - we’ve rounded up some of the best budget hotels Berlin has to offer. More info <a href="http://www.iheartberlin.de/2017/10/05/best-hostels-in-berlin/" target="_blank">here</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div><br>
+         <!-- /hotel recommendations -->
+
+         <hr>
+
+         <!-- memory lane -->
+         <div id="travelGuideBody" class="container">
+            <div class="page-header text-center">
+               <h4>Memory Lane</h4>
+            </div>
+            <div id="memoryLane" class="row">
+               <div class="col-sm-4 col-sm-offset-2">
+                  <img src="/assets/travel9.jpg" alt="" style="width:100%;">
+                  <div class="bottom-left">
+                     <h5>First Date</h5>
+                     <hr>
+                     <a href="https://www.monbijou-theater.de/strandbar-tanz.html" target="_blank">
+                        <p>Monbijou Strandbar</p>
+                        <p>Monbijoustraße 3b</p>
+                        <p>10117, Berlin</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <img src="/assets/travel10.jpg" alt="" style="width:100%;">
+                  <div class="bottom-left">
+                     <h5>Favorite Restaurant</h5>
+                     <hr>
+                     <a href="https://www.tripadvisor.com/Restaurant_Review-g187323-d8665407-Reviews-Stranero-Berlin.html" target="_blank">
+                        <p>Stranero</p>
+                        <p>Liebenwalder Str. 11</p>
+                        <p>13347, Berlin</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div><br>
+         <!-- /memory lane -->
+
+         <hr>
+
+         <!-- recommendations -->
+         <div id="travelGuideBody" class="container">
+            <div class="page-header text-center">
+               <h4>Recommendations</h4>
+            </div>
+            <div id="recommendations" class="row">
+               <div class="col-sm-4">
+                  <div class="thumbnail">
+                     <img src="/assets/travel11.jpg" alt="" style="width: 100%;">
+                     <div class="caption">
+                        <h5>Bars</h5>
+                        <p>7 bars that we recommend. More info <a href="http://www.iheartberlin.de/berlin-bar-guide-for-dates" target="_blank">here</a></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="thumbnail">
+                     <img src="/assets/travel12.jpg" alt="" style="width: 100%;">
+                     <div class="caption">
+                        <h5>Day Activities</h5>
+                        <p>Berlin is actually very big and there is so much to discover beyond our usual comfort zone. More info <a href="http://www.iheartberlin.de/urban-road-trip-around-the-southwest-of-berlin/" target="_blank">here</a></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="thumbnail">
+                     <img src="/assets/travel13.jpg" alt="" style="width: 100%;">
+                     <div class="caption">
+                        <h5>Lakes</h5>
+                        <p>In a region with thousands of lakes, swimming feels as natural as cycling. More info <a href="http://www.slowtravelberlin.com/wild-swimming-in-berlin/" target="_blank">here</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div><br>
+         <!-- /recommendations -->
+
+         <hr>
+
+         <!-- what to do -->
+         <div id="travelGuideBody" class="container">
+            <div class="page-header text-center">
+               <h4>What to do in Berlin</h4>
+            </div>
+            <div id="activities" class="row">
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.atlasobscura.com/places/tempelhof-airport" target="_blank">
+                        <img src="/assets/travel14.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Tempelhof Airport</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.atlasobscura.com/places/badeschiff" target="_blank">
+                        <img src="/assets/travel15.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Badeschiff</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.atlasobscura.com/places/spiegelsaal-in-clarchens-ballhaus" target="_blank">
+                        <img src="/assets/travel16.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Hall of Mirrors in Clarchens Ballhaus</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.timeout.com/berlin/en/art/east-side-gallery" target="_blank">
+                        <img src="/assets/travel17.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>East Side Gallery</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div id="activities" class="row">
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.visitberlin.de/en/charlottenburg-palace-old-palace" target="_blank">
+                        <img src="/assets/travel18.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Charlottenburg Palace</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.tripadvisor.com/Attraction_Review-g187323-d6863338-Reviews-Klunkerkranich-Berlin.html" target="_blank">
+                        <img src="/assets/travel19.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Klunkenkranich – Rooftop bar</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.visitberlin.de/en/tiergarten" target="_blank">
+                        <img src="/assets/travel20.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Tiergarten – Central Park of Berlin</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="http://www.berliner-mauer-gedenkstaette.de/en/" target="_blank">
+                        <img src="/assets/travel21.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Berlin Wall memorial</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div id="activities" class="row">
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://berlinfoodstories.com/2016/06/23/thai-park/" target="_blank">
+                        <img src="/assets/travel22.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Thai Park Berlin</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.berlin.de/en/parks-and-gardens/3561684-4407152-mauerpark.en.html" target="_blank">
+                        <img src="/assets/travel23.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Mauerpark</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.visitberlin.de/en/teufelsberg" target="_blank">
+                        <img src="/assets/travel27.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Teufelsberg</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail" target="_blank">
+                     <a href="https://www.visitberlin.de/en/sanssouci-palace">
+                        <img src="/assets/travel28.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Sanssouci Palace</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div><br>
+         <!-- /what to do?-->
+
+         <hr>
+
+         <!-- where to eat -->
+         <div id="travelGuideBody" class="container">
+            <div class="page-header text-center">
+               <h4>Where to eat</h4>
+            </div>
+            <div id="activities" class="row">
+               <div id="whereToEat" class="col-sm-3 text-center">
+                  <p class="whereToEatText">BECAUSE IN BERLIN EVERYONE SPEAKS FOOD</p>
+                  <p class="whereToEatText">Mayra's favorite food blogs</p>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="http://eatinginberlin.com/" target="_blank">
+                        <img src="/assets/travel24.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Eating in Berlin</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://www.stilinberlin.de/category/food" target="_blank">
+                        <img src="/assets/travel25.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Stil in Berlin</h5>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="thumbnail">
+                     <a href="https://berlinfoodstories.com/" target="_blank">
+                        <img src="/assets/travel26.jpg" alt="" style="width: 100%;">
+                        <div class="caption">
+                           <h5>Berlin food stories</h5>
+                           <p></p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div><br>
+         </div>
+         <!-- /where to eat -->
+      </div>
+      <!-- End Travel Section -->
+
+      <footer class="container-fluid text-center" style="background-color:#f8f8f8;">
+         <h3>#mayraplusmario</h3>
+         <br>
+         <p>Copyright &copy; 2018 Daniel Palacios</p>
+      </footer>
+   </body>
+</html>

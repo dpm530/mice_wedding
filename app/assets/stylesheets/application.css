@@ -144,7 +144,16 @@ body {
          text-align: justify;
       }
       #weddingMargin{
-         margin-top: 45px;
+         margin-top: 35px;
+      }
+      #wedding #weddingMargin  a{
+         font-family: 'Raleway', sans-serif;
+         font-size: 18px;
+         font-weight: normal;
+         color: black;
+         text-align: justify;
+         font-style: italic;
+         color: #dea27a;
       }
 
 #countdown {
@@ -218,6 +227,14 @@ body {
          font-size: 18px;
          font-weight: normal;
          color: black;
+         text-align: justify;
+      }
+      #travelBody #upcomingEventsDescription a{
+         font-family: 'Raleway', sans-serif;
+         font-size: 18px;
+         font-weight: normal;
+         color: #dea27a;
+         font-style: italic;
          text-align: justify;
       }
       #travelBody .italic{
@@ -343,9 +360,13 @@ body {
          height: 250px;
          border-radius: 10px;
       }
-      #upcomingEventsDescription{
-         margin-top: 5px;
+      #travelBody .row{
+         margin-top: 20px;
       }
+      #travelBody #upcomingEvents img{
+         margin-top: 12px;
+      }
+
 
 
 #rsvp{
